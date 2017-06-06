@@ -2,7 +2,7 @@ import MySQLdb
 import os
 from prettytable import PrettyTable
 
-#db = MySQLdb.connect("localhost", "root", "dustyM12", "thedatabase");
+
 db = MySQLdb.connect(os.environ["MYSQL_HOST"], os.environ["MYSQL_USER"], os.environ["MYSQL_PASSWORD"], "test1")
 
 cur = db.cursor()
